@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bkgrnd"
+    android:orientation="vertical"
+    tools:context="com.example.android.news.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:textColorHint="@color/HintColor"
+            android:textColor="@color/textColor"
+            android:hint="@string/search_string"/>
+        <ImageButton
+            android:id="@+id/search_button"
+            android:contentDescription="@string/Image_Content"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@color/bkgrnd"
+            android:src="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/list"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
+
+        <!-- Empty view is only visible when the list has no items. -->
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textColor="@color/datecolor"
+        android:textSize="12sp"
+        android:gravity="start"
+        tools:text="2016-11-10T01:05:44Z" />
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:gravity="end"
+        android:textColor="@color/colorAccent"
+        tools:text="Articles section will be published here" />
+    <TextView
+        android:id="@+id/webtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        tools:text="Long placeholder location that should wrap to more than 2 lines of text"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/boarder"
+        />
+</LinearLayout>

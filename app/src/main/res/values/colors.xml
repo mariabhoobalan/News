@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6F00</color>
+    <color name="colorPrimaryDark">#FF6F00</color>
+    <color name="colorAccent">#FFCCBC</color>
+    <color name="bkgrnd">#424242</color>
+    <color name="HintColor">#616161</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="titlecolor">#E0F2F1</color>
+    <color name="sectioncolor">#FF8A65</color>
+    <color name="datecolor">#039BE5</color>
+    <color name="boarder">#424242</color>
+    <color name="OddPanelColor">#212121</color>
+    <color name="EvenPanelColor">#212121</color>
+</resources>
